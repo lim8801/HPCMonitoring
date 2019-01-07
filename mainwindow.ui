@@ -18,7 +18,7 @@
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>7</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_8">
        <attribute name="title">
@@ -58,6 +58,9 @@
             </property>
            </widget>
           </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEdit_9"/>
+          </item>
           <item row="0" column="1">
            <widget class="QLineEdit" name="lineEdit_7"/>
           </item>
@@ -67,9 +70,6 @@
              <string/>
             </property>
            </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QLineEdit" name="lineEdit_9"/>
           </item>
           <item row="2" column="0">
            <widget class="QLabel" name="label_66">
@@ -89,60 +89,96 @@
        <layout class="QGridLayout" name="gridLayout_53">
         <item row="0" column="0">
          <layout class="QGridLayout" name="gridLayout_52">
-          <item row="5" column="0" colspan="2">
-           <widget class="QPushButton" name="pushButton_17">
-            <property name="text">
-             <string>Estimate Launch!</string>
-            </property>
-           </widget>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="hw_info_dir"/>
           </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_133">
-            <property name="text">
-             <string>Power Consumption Text Save Location</string>
-            </property>
-           </widget>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="tau_dir"/>
           </item>
-          <item row="1" column="1">
-           <widget class="QLineEdit" name="lineEdit_19"/>
-          </item>
-          <item row="4" column="0">
+          <item row="7" column="0">
            <widget class="QLabel" name="label_134">
             <property name="text">
              <string/>
             </property>
            </widget>
           </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="label_135">
-            <property name="text">
-             <string>View the Save File</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QLineEdit" name="lineEdit_20"/>
-          </item>
           <item row="3" column="0">
-           <widget class="QLabel" name="label_136">
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QLineEdit" name="lineEdit_21"/>
-          </item>
-          <item row="2" column="0">
            <widget class="QLabel" name="label_137">
             <property name="text">
-             <string>Argument</string>
+             <string>SMPI Binary</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QPushButton" name="pushButton_12">
+            <property name="text">
+             <string>Browse</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0" colspan="3">
+           <widget class="QPushButton" name="pushButton_17">
+            <property name="text">
+             <string>Run</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_133">
+            <property name="text">
+             <string>MPI Binary</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_135">
+            <property name="text">
+             <string>TAU Binary</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_136">
+            <property name="text">
+             <string>Hardware Information </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="smpi_dir"/>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="mpi_dir"/>
+          </item>
+          <item row="3" column="2">
+           <widget class="QPushButton" name="pushButton_11">
+            <property name="text">
+             <string>Browse</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="pushButton_10">
+            <property name="text">
+             <string>Browse</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="pushButton_9">
+            <property name="text">
+             <string>Browse</string>
             </property>
            </widget>
           </item>
          </layout>
         </item>
        </layout>
+      </widget>
+      <widget class="QWidget" name="Results">
+       <attribute name="title">
+        <string>Power Consumption Results</string>
+       </attribute>
       </widget>
       <widget class="QWidget" name="tab">
        <attribute name="title">

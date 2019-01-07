@@ -1,6 +1,26 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QDoubleSpinBox>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QFontDialog>
+#include <QFile>
+#include <QTextStream>
+#include <QStringList>
+#include <QLabel>
+#include <QResizeEvent>
+#include <QFileDialog>
+#include <QMessageBox>
+#include <string>
+#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QFormLayout>
+#include <QResizeEvent>
+
+
 #include <QMainWindow>
 #include <QListWidget>
 #include <QProcess>
@@ -123,6 +143,7 @@ public:
     int GPU_TestMemcpy(int device);
 
 
+
 private:
     Ui::MainWindow *ui;
 
@@ -134,6 +155,12 @@ private:
     QGroupBox *DOVDevice;
     QGridLayout *DOVGrid;
     QCustomPlot *DOVChart;
+
+    //ButtonThread *b_thread;
+    QFormLayout *perfLayout;
+    QFormLayout *powerLayout;
+    QFormLayout *dataLayout;
+    QFormLayout *topoLayout;
 
     QCustomPlot *SMChart;
 
@@ -158,6 +185,14 @@ private:
 
 
 private slots:
+    // 2nd_gui
+    void FINISH();
+    void BROWSE_1();
+    void BROWSE_2();
+    void BROWSE_3();
+    void BROWSE_4();
+
+    //3rd_gui
     int Update_Window();
 
     int Reset_DevProcUsage();
